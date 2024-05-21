@@ -7,7 +7,7 @@ my_int_variable = 5
 print(my_int_variable)
 
 
-# Cotcatenacion de Variables en ut print
+# Cotcatenacion de Variables en un print
 print(my_vaiable,my_int_variable)
 print("Este es el valor de:", my_int_variable)
 
