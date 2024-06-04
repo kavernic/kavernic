@@ -7,8 +7,6 @@ my_int_variable = 5
 print(my_int_variable)
 
 
-# Cotcatenacion de Variables en ut print
-print(my_vaiable,my_int_variable)
 print("Este es el valor de:", my_int_variable)
 
 # Algunas Funciones del sistema
