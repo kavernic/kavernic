@@ -32,4 +32,27 @@ print(d)
 
 # Division
 
+lenguage_slice = lenguage[1:3]
+print(lenguage_slice)
+
+lenguage_slice = lenguage[1:]
+print(lenguage_slice)
+
+# Reversa
+
+lenguage_reverse = lenguage[::-1]
+print(lenguage_reverse)
+
+ #Funciones
+
+print(lenguage.capitalize())
+print(lenguage.upper())
+print(lenguage.count('t'))
+print(lenguage.isnumeric())
+print('1'.isnumeric())
+print(lenguage.lower())
+
+
+
+
 
