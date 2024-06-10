@@ -5,15 +5,15 @@ print('Hola Python')
 
 """
 Este es un
-comentario 
+comentario
 en varias lineas
 
 """
 
-''' 
+'''
 Este tambien es
 un comentario en
-varias lineas 
+varias lineas
 
 '''
 # Consultar el tipo de dato
@@ -22,4 +22,4 @@ print(type(5)) #Tipo 'int'
 print(type(1.5)) # Tipo 'float'
 print(type(True)) #Tipo'bool'
 
- 
+

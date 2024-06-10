@@ -1,6 +1,4 @@
-002_Operators.py
-
-### Operadores Aritméticos ###
+# Operadores Aritméticos
 
 # Operaciones con enteros
 print(3 + 4)
