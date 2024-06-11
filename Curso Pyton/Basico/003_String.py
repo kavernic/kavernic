@@ -129,7 +129,7 @@ print(sentence)  # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
 
 radius = 10
 pi = 3.14
-area = pi  # radius ## 2
+area = pi  * radius ** 2
 result = 'The area of circle with {} is {}'.format(str(radius), str(area))
 print(result)  # The area of circle with 10 is 314.0
 
@@ -162,8 +162,13 @@ print(num.isalpha())      # False
 # isdecimal(): Checks Decimal Characters
 
 challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
+print(challenge.isdecimal())  # False
+challenge = '123'
+print(challenge.isdecimal())  # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # False
+challenge = '12 3'
+print(challenge.isdecimal())  # False, space not allowed
 
 # isdigit(): Checks Digit Characters
 
