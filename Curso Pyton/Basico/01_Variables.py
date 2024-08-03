@@ -7,11 +7,8 @@ my_int_variable = 5
 print(my_int_variable)
 
 
-<<<<<<< HEAD
 # Cotcatenacion de Variables en ut print
 print(my_vaiable, my_int_variable)
-=======
->>>>>>> origin/main
 print("Este es el valor de:", my_int_variable)
 
 # Algunas Funciones del sistema
