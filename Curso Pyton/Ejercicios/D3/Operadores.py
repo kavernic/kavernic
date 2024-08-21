@@ -1,3 +1,4 @@
+
 #Declarar una variavle con un entero
 edad = 26
 #Declarar una variavle  con un flotante
@@ -63,3 +64,106 @@ if slope_1 == slope_2:
 else:
     print('las pendientes no son iguales')
 
+#Calcular el valor de y (y = x 2 x 6x - 9). Trate de usar 
+# diferentes valores x y averiguar en qué valor x y va a ser 0
+
+for x in range(-10, 10):
+    y = 6*x**3 - 9
+    if y == 0:
+        print('x que produce y = 0:', x)
+    else:
+        print('x:', x, 'y:', y)
+        
+
+#Encuentra la longitud de 'python' y 'dragón' y haz una 
+# declaración de comparación falsa.
+
+longitud_python = len('python')
+longitud_dragon = len('dragon')
+comparacion = longitud_python == longitud_dragon
+print('Longitud de python y dragón es igual:', comparacion)
+
+
+#Uso y operador para comprobar 
+# si 'on' se encuentra tanto en 'python' y 'dragon'
+
+encontrado_on = 'on' in 'python' and 'on' in 'dragon'
+print('on se encuentra en python y dragon:', encontrado_on)
+
+#Espero que este curso no esté lleno de jerga.
+# Utilícese en el operador para comprobar si la jerga está en la sentencia.
+jerga = 'jerga'
+sentencia = 'El curso no está lleno de jerga'
+encontrado_jerga = jerga in sentencia
+print('Jerga en la sentencia:', encontrado_jerga)
+
+#Escriba un script que solicite al usuario que ingrese dos palabras 
+# y verifique si la segunda palabra es un anagrama de la primera.
+print('Ingrese dos palabras para verificar si la segunda es un anagrama de la primera')
+palabra_1 = input('Palabra 1: ')
+palabra_2 = input('Palabra 2: ')
+
+if sorted(palabra_1) == sorted(palabra_2):
+    print('La segunda palabra es un anagrama de la primera')
+    
+#Incluso los números son divisibles por 2 y el resto es cero. 
+# Cómo se comprueba si un número está incluso o no usando python?
+
+def es_numero_par(numero):
+    return numero % 2 == 0
+
+numero = int(input('Ingrese un número: '))
+if es_numero_par(numero):
+    print('El número es par')
+    
+#Comaque si la división de piso de 7 por 3 es 
+# igual al valor convertido int de 2.7.
+
+division_piso = 7 // 3
+valor_int = int(2.7)
+
+if division_piso == valor_int:
+    print('La división de piso de 7 por 3 es igual al valor convertido int de 2.7')
+
+#Comprobar si el tipo de '10' es igual a tipo de 10
+
+variable_1 = 10
+variable_2 = '10'
+
+if type(variable_1) == type(variable_2):
+    print('El tipo de variable_1 es igual al tipo de variable_2')
+    
+#Comprobar si int('9.8') es igual a 10
+
+variable_3 = int('9.8')
+
+if variable_3 == 10:
+    print('int(\'9.8\') es igual a 10')
+
+#Escribe un script que inscriba al usuario a introducir horas y tarifa por hora. 
+# Calcular el pago de la persona?
+
+print('Ingrese sus horas y tarifa por hora')
+horas = float(input('Horas: '))
+tarifa_por_hora = float(input('Tarifa por hora: '))
+pago = horas * tarifa_por_hora
+print('El pago es:', pago)
+
+#Escriba un script que inscriba al usuario para introducir el número de años. Calcular el número de segundos que una persona puede vivir.
+# Supongan que una persona puede vivir cien años
+
+print('Ingrese su edad en años')
+edad_anios = int(input('Edad en años: '))
+edad_segundos = edad_anios * 365 * 24 * 60 * 60
+print('Usted a vivido:', edad_segundos, 'segundos')
+
+'''
+
+    Escribe un guión de Python que muestra la siguiente tabla
+
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+'''
